@@ -153,6 +153,7 @@ html {
           }
       }
       .text-wrap{
+        padding-top: 3vh;
        h2{
         color:white;
        }
