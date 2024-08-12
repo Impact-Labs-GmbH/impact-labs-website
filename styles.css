@@ -132,24 +132,24 @@ html {
       width: 100%;
   }
   .col-third {
-      width:  15vw;
+      width:  330px;
       padding: 20px;
       background-color: rgb(25, 42, 70);
       border-radius: 5%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: start;
       transition-duration: 400ms;
-    
+      align-items: center;
       .img-wrap{
-          margin:auto;
           overflow: hidden;
           border-radius: 50%;
+          height: fit-content;
           img{
               border-radius:50%;
               scale: 1;
               transition-duration: 400ms;              
-              width: 8vw;
+              width: 310px;
           }
       }
       .text-wrap{
@@ -246,8 +246,8 @@ footer{
       max-width: 350px;
       .img-wrap{
           img{
-              height: 310px;
-              width: 310px;
+              height: 250px;
+              width: 250px;
           }
       }
    }
@@ -290,6 +290,16 @@ footer{
   }
 }
 @media screen and (max-width: 576px){
+  .wraper-col{
+    .col-third {
+      .img-wrap{
+          img{
+              height: 200px;
+              width: 200px;
+          }
+      }
+   }
+  }
   body{
     header{
       .logo{
