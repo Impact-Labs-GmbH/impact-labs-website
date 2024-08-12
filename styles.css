@@ -132,7 +132,7 @@ html {
       width: 100%;
   }
   .col-third {
-      width:  20vw;
+      width:  15vw;
       padding: 20px;
       background-color: rgb(25, 42, 70);
       border-radius: 5%;
@@ -149,7 +149,7 @@ html {
               border-radius:50%;
               scale: 1;
               transition-duration: 400ms;              
-              width: 10vw;
+              width: 8vw;
           }
       }
       .text-wrap{
