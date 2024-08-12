@@ -132,7 +132,7 @@ html {
       width: 100%;
   }
   .col-third {
-      max-width: 400px;
+      width:  20vw;
       padding: 20px;
       background-color: rgb(25, 42, 70);
       border-radius: 5%;
@@ -142,15 +142,14 @@ html {
       transition-duration: 400ms;
     
       .img-wrap{
-          margin-bottom: 25px;
+          margin:auto;
           overflow: hidden;
           border-radius: 50%;
           img{
               border-radius:50%;
               scale: 1;
-              transition-duration: 400ms;
-              height: 360px;
-              width: 360px;
+              transition-duration: 400ms;              
+              width: 10vw;
           }
       }
       .text-wrap{
