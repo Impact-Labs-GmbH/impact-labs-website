@@ -37,6 +37,9 @@ h2{
     margin-bottom: 1rem;
 
 }
+.bold{
+  font-weight: bold;
+}
 .logo {
   text-align: center;
   margin-bottom: 10px;
