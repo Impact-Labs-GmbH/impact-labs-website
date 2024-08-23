@@ -37,6 +37,10 @@ h2{
     margin-bottom: 1rem;
 
 }
+
+a{
+  color:rgba(117, 5, 89)
+}
 .bold{
   font-weight: bold;
 }
