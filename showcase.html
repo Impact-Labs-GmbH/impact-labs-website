@@ -46,16 +46,16 @@
         font-weight: 700;
         margin-bottom: 2rem;
         text-align: center;
-        color: #333;
+        color: rgba(117, 5, 89);
     }
     .wraper-col h3 {
         font-size: 1.75rem;
         font-weight: 600;
         margin-top: 2.5rem;
         margin-bottom: 1.5rem;
-        border-bottom: 2px solid #663399;
+        border-bottom: 2px solid rgba(117, 5, 89);
         padding-bottom: 0.5rem;
-        color: #663399;
+        color: rgba(117, 5, 89);
     }
     .wraper-col p, .wraper-col ul {
         font-size: 1.1rem;
@@ -93,18 +93,14 @@
     }
     footer .links a {
         text-decoration: none;
-        color: #333;
+
         font-weight: 600;
     }
     a.nav-link {
-        color: #333;
         font-weight: 600;
         margin: 0 15px;
         text-decoration: none;
         transition: color 0.3s;
-    }
-    a.nav-link:hover {
-        color: #663399;
     }
 
     /* Header */
@@ -114,7 +110,7 @@
       align-items: center;
       padding: 0 40px;
       height: 90px;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid rgba(117, 5, 89);
       background-color: #fff;
       position: sticky;
       top: 0;
@@ -151,7 +147,7 @@
     }
     blockquote {
         background: #f9f9f9;
-        border-left: 5px solid #663399;
+        border-left: 5px solid rgba(117, 5, 89);
         margin: 1.5em 0;
         padding: 1em 1.5em;
         font-style: italic;
@@ -166,19 +162,22 @@
         font-weight: 600;
         font-style: normal;
     }
+    .logo > a {
+        height: 195px;
+    }
   </style>
 </head>
 
 <body>
   <header class="slim-header">
     <div class="logo">
-      <a href="#"><img src="https://placehold.co/200x50/FFFFFF/663399?text=Impact+Labs" alt="Company Logo" onerror="this.onerror=null;this.src='https://placehold.co/200x50/FFFFFF/663399?text=Logo';"></a>
+      <a href="/"><img src="./assets/logo.svg" alt="Company Logo" onerror="this.onerror=null;this.src='https://placehold.co/200x50/FFFFFF/663399?text=Logo';"></a>
     </div>
     <nav class="navbar">
-      <a class="nav-link" href="#">Was wir tun</a>
-      <a class="nav-link" href="#">Wer wir sind</a>
-      <a class="nav-link" href="#">Showcase</a>
-      <a class="nav-link" href="#">Wir ihr uns erreicht</a>
+        <a class="nav-link" href="/#announcements">Was wir tun</a>
+        <a class="nav-link" href="/#team">Wer wir sind</a>
+        <a class="nav-link" href="/showcase.html">Showcase</a>
+        <a class="nav-link" href="/#contact">Wir ihr uns erreicht</a>
     </nav>
   </header>
 
