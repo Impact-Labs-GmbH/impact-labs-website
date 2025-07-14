@@ -7,144 +7,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>Impact Labs</title>
+  <title>Impact Labs - Showcase</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
-
-  <script>
-    var _paq = window._paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(["disableCookies"]);
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function () {
-      var u = "//matomo.develappers.de/";
-      _paq.push(['setTrackerUrl', u + 'matomo.php']);
-      _paq.push(['setSiteId', '6']);
-      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-      g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
-    })();
-  </script>
-  </head>
+</head>
 
 <body>
   <header>
     <div class="py-5 text-center">
       <div class="logo">
-        <img src="./assets/logo.svg" alt="Company Logo">
+        <a href="index.html"><img src="./assets/logo.svg" alt="Company Logo"></a>
       </div>
       <nav class="navbar">
-        <a class="nav-link" href="#announcements">Was wir tun</a>
-        <a class="nav-link" href="#team">Wer wir sind</a>
+        <a class="nav-link" href="index.html#announcements">Was wir tun</a>
+        <a class="nav-link" href="index.html#team">Wer wir sind</a>
         <a class="nav-link" href="showcase.html">Showcase</a>
-        <a class="nav-link" href="#contact">Wir ihr uns erreicht</a>
+        <a class="nav-link" href="index.html#contact">Wir ihr uns erreicht</a>
       </nav>
-      <div class="down-arrow"></div>
     </div>
   </header>
   <main>
-    <div class="wraper-row" id="announcements">
-      <div class="img-col col-50">
-        <img src="assets/telephone.jpg" alt="symbolbild" />
-      </div>
-      <div class="text-col col-50">
-        <h2>CallAI: der smarte AI Callcenter Agent</h2>
-        <p></p>
-        <ul class="bold">
-          <li>Selbstständige Führung von Telefonaten und Beantwortung von Fragen</li>
-          <li>Abbildung von Supportprozessen durch Automatisierung von Routineaufgaben</li>
-          <li>24/7 Verfügbarkeit und Unterstützung in 50 Sprachen</li>
-        </ul>
-        <p>
-          Unser AI Callcenter Agent ist die Zukunft des Kundenservice. Mit seiner Fähigkeit, selbstständig Telefonate zu
-          führen, Fragen zu beantworten und Supportprozesse abzubilden, können Sie Ihre Kundenservice-Prozesse
-          effizienter und kosteneffektiver gestalten. Unser Agent steht Ihren Kunden 24 Stunden am Tag, 7 Tage die Woche
-          zur Verfügung, um ihre Anliegen zu bearbeiten.<br><br>
-
-          Mit unserer Technologie können Sie Ihre Kunden in ihrer Muttersprache ansprechen. Unser AI Callcenter Agent
-          spricht 50 Sprachen und kann somit Kunden auf der ganzen Welt unterstützen. Durch die Automatisierung von
-          Supportprozessen können Sie Ihre Mitarbeiter von Routineaufgaben befreien und ihnen ermöglichen, sich auf
-          komplexe Anliegen zu konzentrieren.
-
-        </p>
-      </div>
-    </div>
-    <div class="wraper-row">
-      <div class="col-50 text-col">
-        <h2>SecureAI Chat – Maximale Effizienz und Datenschutz</h2>
-        <p>Unsere Lösung auf einen Blick:</p>
-        <ul class="bold">
-          <li>Sicherer Zugriff auf KI, ohne dass Daten das Unternehmen verlassen.</li>
-          <li>Unternehmenswissen nutzbar machen: Integration und Durchsuchbarkeit von Unternehmensdaten</li>
-          <li>Effizienzsteigerung: Optimierung von Mitarbeiterproduktivität und Kundensupport</li>
-        </ul>
-        <p>
-          SecureAI Chat bietet Unternehmen die Möglichkeit, leistungsfähige KI-Modelle wie
-          ChatGPT oder Open-Source-LLMs sicher und datenschutzkonform zu nutzen. Egal, ob es um die
-          Unterstützung Ihrer Mitarbeiter oder die Optimierung des Kundensupports geht – SecureAI setzt neue
-          Maßstäbe in puncto Effizienz und Benutzerfreundlichkeit.<br>
-          Mit der Möglichkeit, lokale LLMs einzusetzen, verbleiben Ihre sensiblen Daten stets im Unternehmen. Zudem
-          ermöglicht unsere Lösung die Integration und Durchsuchbarkeit Ihres Unternehmenswissens durch
-          Retrieval-Augmented-Generation (RAG), sodass
-          Sie wertvolle Informationen direkt im Chat verfügbar sind.
-        </p>
-      </div>
-      <div class="col-50 img-col">
-        <img src="./assets/library.jpg" alt="symbolbild" />
-      </div>
-    </div>
-    <div class="wraper-col">
-      <h2 id="team">
-        Wer wir sind
-      </h2>
-      <h3></h3>
-      <div class="rowy">
-        <div class="col-third">
-          <div class="img-wrap"><img alt="Portrait von Martin Krockert" src="assets/martin-krockert.jpg" /></div>
-          <div class="text-wrap">
-            <h2>
-              Dr. Ing. Martin Krockert
-            </h2>
-            <h3>
-              CEO, Founder
-            </h3>
-          </div>
-        </div>
-        <div class="col-third">
-          <div class="img-wrap"><img alt="Portrait von Oliver Guhr" src="assets/oliver-guhr.jpg" /></div>
-          <div class="text-wrap">
-            <h2>
-              Dr. Ing. Oliver Guhr
-            </h2>
-            <h3>
-              CTO, Founder
-            </h3>
-          </div>
-        </div>
-        <div class="col-third">
-          <div class="img-wrap"><img alt="Develappers Firmenlogo" src="assets/develappers.png" /></div>
-          <div class="text-wrap">
-            <h2>
-              Develappers GmbH
-            </h2>
-            <h3>
-              Hinter uns steht ein unglaubliches Team von talentierten Menschen.
-            </h3>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div class="wraper-col" id="contact">
-      <h2>Wie ihr uns erreicht</h2>
+    <div class="wraper-col" id="showcase-content">
+      <h2>Case Study: Carl und Carla automatisieren ihren Kundenservice mit ILAI</h2>
+      
+      <h3>Hintergrund</h3>
       <p>
-        Hab ihr Fragen zu uns oder unseren Themen? Schreib uns eine Mail an:
+        Carl und Carla ist ein deutschlandweiter Carsharing-Anbieter mit über 1.000
+        Fahrzeugen in 40 Städten. Das Unternehmen kombiniert die Unabhängigkeit
+        klassischer Autovermietung mit der Flexibilität moderner Carsharing-Modelle –
+        besonders für Transporter und Kleinbusse.
       </p>
-      <strong><a href="#" id="email-link">[Email wird geladen]</a>
-      </strong>
+      <p>
+        Kund:innen mieten Fahrzeuge häufig für halbe oder ganze Tage, mit Abhol- und
+        Rückgabezeiten in engen Zeitfenstern. Das führt in Peak-Zeiten zu einem stark
+        schwankenden Anfragevolumen, das bisher nur mit erheblichem Personalaufwand
+        bewältigt werden konnte.
+      </p>
+
+      <h3>Herausforderung</h3>
+      <p>
+        Das bestehende Callcenter-Team war mit mehreren Herausforderungen
+        konfrontiert:
+      </p>
+      <ul class="bold">
+        <li>Hoher Personalaufwand in Spitzenzeiten</li>
+        <li>Keine 24/7-Erreichbarkeit</li>
+        <li>Lange Wartezeiten an der Hotline</li>
+        <li>Schwierigkeiten bei Qualitätssicherung und Skalierbarkeit</li>
+      </ul>
+      <p>
+        Carl und Carla suchten daher nach einer Lösung, die skalierbar, effizient und
+        automatisiert arbeitet, ohne dabei den persönlichen Anspruch an Servicequalität
+        aufzugeben.
+      </p>
     </div>
   </main>
   <footer>
