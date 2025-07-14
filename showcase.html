@@ -14,13 +14,21 @@
     rel="stylesheet">
     
   <style>
-    /* Allgemeine Stile von der ursprünglichen Seite */
+    /* Allgemeine Stile */
+    html {
+        height: 100%;
+    }
     body {
         font-family: 'Open Sans', sans-serif;
         color: #333;
         margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #fff;
     }
     main {
+        flex: 1;
         padding: 2rem 0;
     }
     footer {
@@ -36,16 +44,18 @@
    .wraper-col h2 {
         font-size: 2.5rem;
         font-weight: 700;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         text-align: center;
+        color: #333;
     }
     .wraper-col h3 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         font-weight: 600;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        border-bottom: 2px solid #663399; /* Akzentfarbe */
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 2px solid #663399;
         padding-bottom: 0.5rem;
+        color: #663399;
     }
     .wraper-col p, .wraper-col ul {
         font-size: 1.1rem;
@@ -55,9 +65,11 @@
         list-style-position: inside;
         padding-left: 0;
     }
-    .wraper-col .bold li {
+    .wraper-col .bold li, .wraper-col .ergebnis-liste li {
         font-weight: 600;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.75rem;
+        list-style-type: '✓ ';
+        padding-left: 10px;
     }
     .wraper-row {
         display: flex;
@@ -92,39 +104,74 @@
         transition: color 0.3s;
     }
     a.nav-link:hover {
-        color: #663399; /* Akzentfarbe */
+        color: #663399;
     }
 
-    /* Hinzugefügtes CSS für den schmalen Header */
+    /* Header */
     .slim-header {
       display: flex;
-      justify-content: space-between; /* Ordnet Logo und Menü an den Enden an */
-      align-items: center; /* Zentriert die Elemente vertikal */
-      padding: 0 40px; /* Innenabstand links/rechts */
-      height: 90px; /* Feste Höhe für den Header */
-      border-bottom: 1px solid #eee; /* Dezente Trennlinie */
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+      height: 90px;
+      border-bottom: 1px solid #eee;
       background-color: #fff;
       position: sticky;
       top: 0;
       z-index: 1000;
     }
-
     .slim-header .logo img {
-      height: 45px; /* Höhe des Logos anpassen */
+      height: 45px;
       width: auto;
     }
-
     .slim-header .navbar {
-      display: flex; /* Stellt sicher, dass die Links nebeneinander liegen */
+      display: flex;
+    }
+
+    /* Neue Stile für Case Study */
+    .ilai-features {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: 2rem 0;
+        padding: 1.5rem;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+    }
+    .feature-item {
+        flex: 1;
+    }
+    .feature-item img {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    .feature-item p {
+        font-weight: 600;
+        margin: 0;
+    }
+    blockquote {
+        background: #f9f9f9;
+        border-left: 5px solid #663399;
+        margin: 1.5em 0;
+        padding: 1em 1.5em;
+        font-style: italic;
+    }
+    blockquote p {
+        margin: 0;
+    }
+    blockquote cite {
+        display: block;
+        text-align: right;
+        margin-top: 1em;
+        font-weight: 600;
+        font-style: normal;
     }
   </style>
 </head>
 
 <body>
-  <!-- Angepasster Header für die Showcase-Seite -->
   <header class="slim-header">
     <div class="logo">
-      <!-- Platzhalter-Logo, da der Pfad nicht zugänglich ist -->
       <a href="#"><img src="https://placehold.co/200x50/FFFFFF/663399?text=Impact+Labs" alt="Company Logo" onerror="this.onerror=null;this.src='https://placehold.co/200x50/FFFFFF/663399?text=Logo';"></a>
     </div>
     <nav class="navbar">
@@ -169,6 +216,78 @@
         automatisiert arbeitet, ohne dabei den persönlichen Anspruch an Servicequalität
         aufzugeben.
       </p>
+
+      <!-- NEUE ABSCHNITTE -->
+      <h3>Die Lösung: ILAI von Develappers</h3>
+      <p>
+        In Zusammenarbeit mit Develappers und dem Technologiepartner Impact Labs
+        A.I. wurde der KI-basierte Sprach- und Chatbot ILAI eingeführt.
+      </p>
+      <p>
+        ILAI (Impact Labs A.I.) ist ein KI-Agent für sprachbasierte Kundeninteraktionen. Die Lösung ist erreichbar per Telefon, E-Mail, Chat und integriert in bestehende Infrastruktur über LLM-Tool Calls für eine nahtlose Integration in den Gesprächsverlauf, ein umfangreiches FAQ- und Ticketsystem.
+      </p>
+      <div class="ilai-features">
+          <div class="feature-item">
+              <img src="https://placehold.co/40x40/663399/FFFFFF?text=📞" alt="Telefon Icon">
+              <p>Telefon</p>
+          </div>
+          <div class="feature-item">
+              <img src="https://placehold.co/40x40/663399/FFFFFF?text=✉️" alt="E-Mail Icon">
+              <p>E-Mail</p>
+          </div>
+          <div class="feature-item">
+              <img src="https://placehold.co/40x40/663399/FFFFFF?text=💬" alt="Chat Icon">
+              <p>Chat</p>
+          </div>
+          <div class="feature-item">
+              <img src="https://placehold.co/40x40/663399/FFFFFF?text=⚙️" alt="Integration Icon">
+              <p>Systemintegration</p>
+          </div>
+      </div>
+      
+      <h3>Was übernimmt ILAI konkret?</h3>
+      <p>Der erste Rollout bei Carl und Carla fokussierte sich auf den Fahrzeugrückgabeprozess:</p>
+      <ul class="bold">
+        <li>Nutzeridentifikation via Telefonnummer oder Kennzeichen</li>
+        <li>Datenabfrage aus bestehenden Systemen (Tankstand, Rückgabeort via GPS)</li>
+        <li>Dialogführung zur Abfrage von Schäden oder Abweichungen</li>
+        <li>Automatisierte Aktionen, wie z.B. das Verriegeln des Fahrzeugs</li>
+      </ul>
+      <p>Zudem wurden mehrsprachige Fähigkeiten sowie eine 24/7-Verfügbarkeit integriert.</p>
+
+      <h3>Ergebnis</h3>
+      <p>Die Einführung von ILAI brachte messbare Erfolge:</p>
+      <ul class="ergebnis-liste">
+        <li>90% der Rückgabeanfragen werden vollständig automatisiert abgewickelt</li>
+        <li>Kosten pro Anruf < 1€</li>
+        <li>Rund-um-die-Uhr-Erreichbarkeit ohne zusätzliches Personal</li>
+        <li>Mehrsprachige Kommunikation über Sprache und Text</li>
+        <li>Entlastung des Callcenters bei gleichbleibender Servicequalität</li>
+      </ul>
+      
+      <blockquote>
+        <p>„Dank des KI-basierten Call-Center-Agents können unsere Kunden die Fahrzeugrückgabe nun in wenigen Minuten und ganz ohne Wartezeit erledigen. Für unser Team bedeutet das eine enorme Entlastung, da Routineanfragen automatisch und zuverlässig bearbeitet werden. Besonders überzeugt hat uns die nahtlose Integration in unsere Prozesse: Rund 90% der Rückgaben werden komplett automatisch abgewickelt – das spart Zeit und sorgt für zufriedene Kunden.“</p>
+        <cite>— Gregor Wendt, Gründer und CTO bei Carl und Carla</cite>
+      </blockquote>
+      
+      <blockquote>
+        <p>„Der Call Center Agent hat unsere Erwartungen an Effektivität und Effizienz weit übertroffen. So könnten wir nicht nur 90 Prozent der Rückgaben bereits erfolgreich abwickeln sondern diese durch geschickte Integration des Dialogsystems in die Infrastruktur auch die Gesprächsdauer um 50 % verkürzen.“</p>
+        <cite>— Dr. Ing. Martin Krockert, Gründer und CEO bei der Impact Labs GmbH</cite>
+      </blockquote>
+
+      <h3>Technologischer Hintergrund (Auszug)</h3>
+      <ul class="bold">
+        <li>SIP-Telefonie-Anbindung (C#) mit Echtzeit-Sprachstreaming</li>
+        <li>Eigene KI-Inferenzsysteme in Python (ASR / STT)</li>
+        <li>Azure GPT-4.1 Instanz für dialogbasierte Interaktion</li>
+        <li>Azure Text-to-Speech (TTS) für natürliche Sprachausgabe</li>
+        <li>Azure VM mit eigener Log- & Monitoring Instanz über Grafana / Loki mit OpenTelemetry</li>
+      </ul>
+
+      <h3>Fazit</h3>
+      <p>Carl und Carla zeigen eindrucksvoll, wie zukunftsfähige Kundenkommunikation aussehen kann. Die Kombination aus durchdachtem Prozessdesign, technischer Exzellenz und dem Mut zur Innovation macht ILAI zu einem Paradebeispiel für gelungene KI-Integration im Mittelstand.</p>
+      <p>ILAI steht für intelligente, automatisierte und nahbare Kundenkommunikation. Rund um die Uhr.</p>
+      <!-- ENDE NEUE ABSCHNITTE -->
     </div>
   </main>
   
@@ -196,7 +315,6 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS (für eventuelle interaktive Komponenten) -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     xintegrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
