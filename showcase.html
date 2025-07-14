@@ -12,106 +12,44 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
   <style>
-    /* Allgemeine Stile */
+    /* Angepasste und kombinierte Stile */
     html {
         height: 100%;
+        scroll-behavior: smooth;
     }
     body {
-        font-family: 'Open Sans', sans-serif;
-        color: #333;
-        margin: 0;
+        background: rgb(210, 210, 211);
         display: flex;
         flex-direction: column;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: 400;
         min-height: 100vh;
-        background-color: #fff;
+        margin: 0;
+        color: #333;
     }
     main {
         flex: 1;
-        padding: 2rem 0;
+        /* padding wird von .wraper-col übernommen */
     }
-    footer {
-        background-color: #f8f9fa;
-        padding: 2rem 0;
-        border-top: 1px solid #e7e7e7;
-    }
-   .wraper-col {
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 2rem;
-    }
-   .wraper-col h2 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 2rem;
-        text-align: center;
-        color: rgba(117, 5, 89);
-    }
-    .wraper-col h3 {
-        font-size: 1.75rem;
-        font-weight: 600;
-        margin-top: 2.5rem;
-        margin-bottom: 1.5rem;
-        border-bottom: 2px solid rgba(117, 5, 89);
-        padding-bottom: 0.5rem;
-        color: rgba(117, 5, 89);
-    }
-    .wraper-col p, .wraper-col ul {
-        font-size: 1.1rem;
-        line-height: 1.7;
-    }
-    .wraper-col ul {
-        list-style-position: inside;
-        padding-left: 0;
-    }
-    .wraper-col .bold li, .wraper-col .ergebnis-liste li {
-        font-weight: 600;
-        margin-bottom: 0.75rem;
-        list-style-type: '✓ ';
-        padding-left: 10px;
-    }
-    .wraper-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 1rem 2rem;
-    }
-    footer .socials ul, footer .links ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-    }
-    footer .socials li {
-        margin-right: 15px;
-    }
-    footer .socials img {
-        height: 24px;
-    }
-    footer .links a {
-        text-decoration: none;
-
-        font-weight: 600;
-    }
-    a.nav-link {
-        font-weight: 600;
-        margin: 0 15px;
-        text-decoration: none;
-        transition: color 0.3s;
+    img {
+        max-height: 100vh;
     }
 
-    /* Header */
+    /* Header (spezifisch für Showcase-Seite beibehalten) */
     .slim-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 0 40px;
       height: 90px;
-      border-bottom: 1px solid rgba(117, 5, 89);
-      background-color: #fff;
+      border-bottom: 1px solid rgba(117, 5, 89, 0.2);
+      background-color: white; /* Hintergrund für Header */
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -123,8 +61,83 @@
     .slim-header .navbar {
       display: flex;
     }
+    a.nav-link {
+        color: rgba(117, 5, 89);
+        font-size: large;
+        position: relative;
+        font-weight: 600;
+        margin: 0 15px;
+        text-decoration: none;
+    }
+    a.nav-link:hover {
+        text-decoration: underline;
+    }
 
-    /* Neue Stile für Case Study */
+    /* Allgemeine Typografie aus neuem CSS */
+    h2 {
+        color: rgb(25, 42, 70);
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: 400;
+        color: #565656;
+        margin-bottom: 24px;
+        margin-top: 2.5rem;
+        border-bottom: 2px solid rgba(117, 5, 89);
+        padding-bottom: 0.5rem;
+    }
+    a {
+      color:rgba(117, 5, 89);
+    }
+    .bold {
+      font-weight: bold;
+    }
+
+    /* Wrapper-Stile aus neuem CSS */
+    .wraper-col {
+        width: 100%;
+        max-width: 1400px;
+        padding: 2rem 30px 100px 30px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: white; /* Hintergrund für den Inhaltsbereich */
+    }
+    .wraper-row{
+        width: 100%;
+        max-width: 1400px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+    }
+    .wraper-row .col-50{
+        width: 50%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .wraper-row .img-col img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        overflow: hidden;
+    }
+
+    /* Stile für Case-Study-spezifische Elemente (beibehalten und angepasst) */
+    .ergebnis-liste li {
+        font-weight: bold;
+        margin-bottom: 0.75rem;
+        list-style-type: '✓ ';
+        padding-left: 10px;
+    }
     .ilai-features {
         display: flex;
         justify-content: space-around;
@@ -137,9 +150,10 @@
     .feature-item {
         flex: 1;
     }
-    .feature-item img {
-        height: 40px;
-        margin-bottom: 10px;
+    .feature-item i {
+        font-size: 36px;
+        margin-bottom: 15px;
+        color: rgba(117, 5, 89);
     }
     .feature-item p {
         font-weight: 600;
@@ -162,8 +176,83 @@
         font-weight: 600;
         font-style: normal;
     }
-    .logo > a {
-        height: 195px;
+
+    /* Footer-Stile */
+    footer {
+        width: 100%;
+        background-color: #f8f9fa;
+        padding: 2rem 0;
+        border-top: 1px solid #e7e7e7;
+    }
+    footer .wraper-row {
+        padding-bottom: 0;
+    }
+    footer .links ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 25px;
+        padding: 0;
+        margin: 0;
+    }
+    footer .links ul li a {
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    footer .socials ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        gap: 10px;
+        margin: 0;
+    }
+    footer .socials ul li a img {
+        width: 24px;
+        height: 24px;
+        transition-duration: 200ms;
+    }
+    footer .socials ul li a img:hover {
+        scale: 1.1;
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 1200px) {
+        .wraper-row{
+            max-width: 992px;
+            flex-direction: column;
+            width: auto;
+        }
+        .wraper-row .col-50{
+            width: 100%;
+        }
+        footer .wraper-row {
+            flex-direction: row;
+        }
+    }
+    @media screen and (max-width: 576px){
+        .wraper-col {
+            padding-bottom: 50px;
+            max-width: 90vw;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .wraper-row{
+            padding-bottom: 50px;
+            max-width: 90vw;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        footer .wraper-row {
+            flex-direction: column;
+            align-items: start;
+            gap: 0;
+            padding-bottom: 0;
+        }
+        footer .wraper-row .links ul{
+            padding-left: 0;
+        }
     }
   </style>
 </head>
@@ -171,7 +260,7 @@
 <body>
   <header class="slim-header">
     <div class="logo">
-      <a href="/"><img src="./assets/logo.svg" alt="Company Logo" onerror="this.onerror=null;this.src='https://placehold.co/200x50/FFFFFF/663399?text=Logo';"></a>
+      <a href="/"><img src="https://placehold.co/200x50/FFFFFF/750559?text=Impact+Labs" alt="Company Logo" onerror="this.onerror=null;this.src='https://placehold.co/200x50/FFFFFF/663399?text=Logo';"></a>
     </div>
     <nav class="navbar">
         <a class="nav-link" href="/#announcements">Was wir tun</a>
@@ -216,7 +305,6 @@
         aufzugeben.
       </p>
 
-      <!-- NEUE ABSCHNITTE -->
       <h3>Die Lösung: ILAI von Develappers</h3>
       <p>
         In Zusammenarbeit mit Develappers und dem Technologiepartner Impact Labs
@@ -227,20 +315,20 @@
       </p>
       <div class="ilai-features">
           <div class="feature-item">
-              <img src="https://placehold.co/40x40/663399/FFFFFF?text=📞" alt="Telefon Icon">
+              <i class="fa-solid fa-phone"></i>
               <p>Telefon</p>
           </div>
           <div class="feature-item">
-              <img src="https://placehold.co/40x40/663399/FFFFFF?text=✉️" alt="E-Mail Icon">
+              <i class="fa-solid fa-envelope"></i>
               <p>E-Mail</p>
           </div>
           <div class="feature-item">
-              <img src="https://placehold.co/40x40/663399/FFFFFF?text=💬" alt="Chat Icon">
+              <i class="fa-solid fa-comments"></i>
               <p>Chat</p>
           </div>
           <div class="feature-item">
-              <img src="https://placehold.co/40x40/663399/FFFFFF?text=⚙️" alt="Integration Icon">
-              <p>Systemintegration</p>
+              <i class="fa-solid fa-cogs"></i>
+              <p>Prozessintegration</p>
           </div>
       </div>
       
@@ -258,7 +346,6 @@
       <p>Die Einführung von ILAI brachte messbare Erfolge:</p>
       <ul class="ergebnis-liste">
         <li>90% der Rückgabeanfragen werden vollständig automatisiert abgewickelt</li>
-        <li>Kosten pro Anruf < 1€</li>
         <li>Rund-um-die-Uhr-Erreichbarkeit ohne zusätzliches Personal</li>
         <li>Mehrsprachige Kommunikation über Sprache und Text</li>
         <li>Entlastung des Callcenters bei gleichbleibender Servicequalität</li>
@@ -278,7 +365,7 @@
       <ul class="bold">
         <li>SIP-Telefonie-Anbindung (C#) mit Echtzeit-Sprachstreaming</li>
         <li>Eigene KI-Inferenzsysteme in Python (ASR / STT)</li>
-        <li>Azure GPT-4.1 Instanz für dialogbasierte Interaktion</li>
+        <li>Azure GPT-4o Instanz für dialogbasierte Interaktion</li>
         <li>Azure Text-to-Speech (TTS) für natürliche Sprachausgabe</li>
         <li>Azure VM mit eigener Log- & Monitoring Instanz über Grafana / Loki mit OpenTelemetry</li>
       </ul>
@@ -286,7 +373,6 @@
       <h3>Fazit</h3>
       <p>Carl und Carla zeigen eindrucksvoll, wie zukunftsfähige Kundenkommunikation aussehen kann. Die Kombination aus durchdachtem Prozessdesign, technischer Exzellenz und dem Mut zur Innovation macht ILAI zu einem Paradebeispiel für gelungene KI-Integration im Mittelstand.</p>
       <p>ILAI steht für intelligente, automatisierte und nahbare Kundenkommunikation. Rund um die Uhr.</p>
-      <!-- ENDE NEUE ABSCHNITTE -->
     </div>
   </main>
   
