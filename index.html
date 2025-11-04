@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
+  <script src="https://collana.impact-labs.ai/chatbot.js"></script>
 
   <script>
     var _paq = window._paq = window._paq || [];
@@ -165,6 +166,21 @@
         <ul>
           <li>
             <a href="./impressum.html">Impressum</a>
+            <chat-bot-widget
+                  api-base-url="/api/v1/faq/query"
+                  chat-aside="true"
+                  chat-height="60"
+                  chat-width="30"
+                  chat-position-right="1"
+                  chat-position-bottom="4"
+                  font-size="16"
+                  primary-color="#750559"
+                  bg-color="#d2d2d3"
+                  bg-bot-message="#212529"
+                  bg-user-message="#750559"
+                  chat-title="Call AI Chatbot"
+                  first-message="**Hallo**, ich bin dein Digitaler Assistent der Impact Labs, wie kann ich dir helfen?">
+                </chat-bot-widget>
           </li>
         </ul>
       </div>
@@ -181,5 +197,6 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 </body>
+
 
 </html>
